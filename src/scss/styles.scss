@@ -1,0 +1,125 @@
+@import "~bootstrap/scss/bootstrap";
+
+a{
+    text-decoration: none;
+}
+
+.text{
+    color: #44006b;
+}
+
+.background-radial-gradient {
+    background-color: hsl(218, 41%, 15%);
+    background-image: radial-gradient(650px circle at 0% 0%,
+      hsl(271, 100%, 50%) 35%,
+        hsl(271, 100%, 50%) 35%,
+        hsl(271, 100%, 50%) 35%,
+        hsl(271, 100%, 50%) 35%,
+        transparent 100%),
+      radial-gradient(1250px circle at 100% 100%,
+        hsl(315, 52%, 46%) 15%,
+        hsl(315, 52%, 46%) 15%,
+        hsl(315, 52%, 46%) 15%,
+        hsl(315, 52%, 46%) 15%,
+        transparent 100%);
+}
+
+
+.white-color{
+  color: white;
+  text-align: center;
+}
+
+
+.transparent-bottons{
+  background-color: transparent;
+  border: 0px;
+}
+
+.table-responsive {
+  max-height: 200px;
+  overflow: scroll;
+}
+
+a::after{
+  content: " ";
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0px;
+  transition: all .8s;
+
+}
+
+a:hover:after{
+  width: 100%;
+  background: #333;
+}
+
+.botones{
+  border: 1px;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  font-weight: bold;
+  padding: 5px 15px;
+}
+
+
+.botones:active{
+  background-color: #3e8e41;
+  transform: translateY(4px);
+}
+
+
+.barra-inferior{
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+
+.logos{
+  font-size: 25px;
+
+
+
+}
+
+
+.botones-cierre{
+  background-color: red;
+  border-radius: 5px;
+  border: 0px;
+  color: white;
+  width: 45px;
+}
+
+.botones-cierre:active{
+  transform: translateY(4px);
+}
+
+.cardDiscoteca{
+  max-width: 800px;
+  background-color: #fff;
+  box-shadow: 0px 0px 25px rgba(0,0,0,0.1);
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+  margin: 10px auto;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.row-striped:nth-of-type(odd){
+  background-color: #efefef;
+  border-left: 4px #000000 solid;
+}
+
+.row-striped:nth-of-type(even){
+  background-color: #ffffff;
+  border-left: 4px #000000 solid;
+}
+
+.row-striped {
+    padding: 15px 0;
+}
