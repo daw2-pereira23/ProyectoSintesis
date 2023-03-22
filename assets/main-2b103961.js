@@ -107,110 +107,96 @@ const interfaz = {
 };
 const login = {
   template: `
-    <div class="col-12 background-radial-gradient overflow-hidden">
-    <style>
-        
-        
-        #radius-shape-1 {
-          height: 220px;
-          width: 220px;
-          top: -60px;
-          left: -130px;
-          background: radial-gradient(#44006b, #ad1fff);
-          overflow: hidden;
-        }
-    
-        #radius-shape-2 {
-          border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
-          bottom: -60px;
-          right: -110px;
-          width: 300px;
-          height: 300px;
-          background: radial-gradient(#44006b, #ad1fff);
-          overflow: hidden;
-        }
-    
-        .bg-glass {
-          background-color: hsla(0, 0%, 100%, 0.9) !important;
-          backdrop-filter: saturate(200%) blur(25px);
-        }
-      </style>
-    
-      <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
-        <div class="row gx-lg-5 align-items-center mb-5">
-          <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
-            <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
-              Tu App para salir de fiesta <br />
-              <span style="color: hsl(218, 81%, 75%)">Salimos <strong>Tonight ?</strong></span>
-            </h1>
-            <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
-              
-            </p>
-          </div>
-    
-          <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
-            <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
-            <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
-    
-            <div class="card bg-glass">
-              
-              <div class="card-body px-4 py-5 px-md-5">
-                <h1 id="white-text">INICIO DE SESION</h1>
-                <form>
-                  <!-- 2 column grid layout with text inputs for the first and last names -->
-                  
-    
-                  <!-- Email input -->
-                  <div class="form-outline mb-4">
-                    <input type="email" id="form3Example3" class="form-control" />
-                    <label class="form-label" for="form3Example3">Correo Electronico</label>
-                  </div>
-    
-                  <!-- Password input -->
-                  <div class="form-outline mb-4">
-                    <input type="password" id="form3Example4" class="form-control" />
-                    <label class="form-label" for="form3Example4">Contraseña</label>
-                  </div>
-    
-                  <!-- Checkbox -->
-                  <div class="form-check d-flex justify-content-center mb-4">
-                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
-                    <label class="form-check-label" for="form2Example33">
-                      No recuerdo mi contraseña
-                    </label>
-                  </div>
-    
-                  <!-- Submit button -->
-                  <div class="justify-content-center d-flex">
-                      <button id="botonLogin" class="transparent-bottons"><p class="text" id="">Ya tengo cuenta, iniciar sesion</p></button> 
-                  </div>
-    
-                  <!-- Register buttons -->
-                  <div class="text-center">
-                   
-                    <button type="button" class="btn btn-link btn-floating mx-1">
-                      <i class="fab fa-facebook-f"></i>
-                    </button>
-    
-                    <button type="button" class="btn btn-link btn-floating mx-1">
-                      <i class="fab fa-google"></i>
-                    </button>
-    
-                    <button type="button" class="btn btn-link btn-floating mx-1">
-                      <i class="fab fa-twitter"></i>
-                    </button>
-    
-                    <button type="button" class="btn btn-link btn-floating mx-1" id="boton">
-                      <i class="fab fa-github"></i>
-                    </button>
-                  </div>
-                </form>
-              </div>
+  <div class="col-12 background-radial-gradient overflow-hidden">
+  <style>
+      
+      }
+  
+      #radius-shape-1 {
+        height: 220px;
+        width: 220px;
+        top: -60px;
+        left: -130px;
+        background: radial-gradient(#44006b, #ad1fff);
+        overflow: hidden;
+      }
+  
+      #radius-shape-2 {
+        border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+        bottom: -60px;
+        right: -110px;
+        width: 300px;
+        height: 300px;
+        background: radial-gradient(#44006b, #ad1fff);
+        overflow: hidden;
+      }
+  
+      .bg-glass {
+        background-color: hsla(0, 0%, 100%, 0.9) !important;
+        backdrop-filter: saturate(200%) blur(25px);
+      }
+    </style>
+  
+    <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
+      <div class="row gx-lg-5 align-items-center mb-5">
+        <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+          <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
+            Tu App para salir de fiesta <br />
+            <span style="color: hsl(218, 81%, 75%)">Salimos <strong>Tonight ?</strong></span>
+          </h1>
+          <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
+            
+          </p>
+        </div>
+  
+        <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+          <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+          <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+  
+          <div class="card bg-glass">
+            <div class="card-body px-4 py-5 px-md-5">
+              <form>
+                <!-- 2 column grid layout with text inputs for the first and last names -->
+                <div class="row">
+                  <h1>INICIO DE SESION </h1>
+                </div>
+  
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <input type="email" id="form3Example3" class="form-control" />
+                  <label class="form-label" for="form3Example3">Correo Electronico</label>
+                </div>
+  
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                  <input type="password" id="form3Example4" class="form-control" />
+                  <label class="form-label" for="form3Example4">Contraseña</label>
+                </div>
+  
+                <!-- Checkbox -->
+                <div class="form-check d-flex justify-content-center mb-4">
+                  <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
+                  <label class="form-check-label" for="form2Example33">
+                    No recuerdo mi contraseña
+                  </label>
+                </div>
+  
+                <!-- Submit button -->
+               <br>
+               <br>
+               <br>
+                <!-- Register buttons -->
+                <div class="text-center">
+                 <button id="butonLogin" class="transparent-bottons"><a><p class="text" id="botonLogin">Ya tengo cuenta, iniciar sesion</p></a></button> 
+
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
-  </div>
+    </div>
+</div>
     `,
   script: () => {
     document.querySelector("#botonLogin").addEventListener("click", () => {
@@ -3136,7 +3122,7 @@ const header = {
   template: `
     <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#"><img src="../imagenes/logo.svg" alt="Logo Svg" id="logotipoPagina"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -3179,9 +3165,131 @@ const header = {
     });
   }
 };
+const cupones = {
+  template: `
+  <div class="col-12 background-radial-gradient overflow-hidden vh-100">
+  <style>
+            
+            
+  #radius-shape-1 {
+      height: 220px;
+      width: 220px;
+      top: -60px;
+      left: -130px;
+      background: radial-gradient(#44006b, #ad1fff);
+      overflow: hidden;
+  }
+
+  #radius-shape-2 {
+      border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+      bottom: -60px;
+      right: -110px;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(#44006b, #ad1fff);
+      overflow: hidden;
+  }
+
+  .bg-glass {
+      background-color: hsla(0, 0%, 100%, 0.9) !important;
+      backdrop-filter: saturate(200%) blur(25px);
+  }
+  </style>
+  <div class="container col-12 d-flex justify-content-center col-sm-8">
+      <h1 class="my-5 display-5 fw-bold ls-tight text-center" style="color: hsl(218, 81%, 95%)">
+      CUPONES <br/>
+      <span style="color: hsl(218, 81%, 75%)">Salimos <strong>Tonight ?</strong></span>
+      <o/h1>
+  </div>
+  <div class="col-12 justify-content-center d-flex ps-5 pe-5">
+    <div class="col-6 border d-flex flex-column justify-content-center align-items-center">
+        <div class="card" style="width: 30rem;">
+          <img class="card-img-top" src="../imagenes/publicidadWaka.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Titulo Descuento</h5>
+            <p class="card-text">Descripcion Descuento</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated text-start" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75 %</div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="col-6 border d-flex flex-column justify-content-center align-items-center ">
+      <div class="card" style="width: 30rem;">
+        <img class="card-img-top" src="../imagenes/cocoa.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Titulo Descuento</h5>
+          <p class="card-text">Descripcion Descuento</p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated text-start" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75 %</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+
+  </div>
+    `,
+  script: () => {
+    console.log("Cupones");
+  }
+};
+const descubrir = {
+  template: `
+  
+    <div class="col-12 background-radial-gradient overflow-hidden vh-100">
+        <style>
+            
+            
+        #radius-shape-1 {
+            height: 220px;
+            width: 220px;
+            top: -60px;
+            left: -130px;
+            background: radial-gradient(#44006b, #ad1fff);
+            overflow: hidden;
+        }
+    
+        #radius-shape-2 {
+            border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+            bottom: -60px;
+            right: -110px;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(#44006b, #ad1fff);
+            overflow: hidden;
+        }
+    
+        .bg-glass {
+            background-color: hsla(0, 0%, 100%, 0.9) !important;
+            backdrop-filter: saturate(200%) blur(25px);
+        }
+        </style>
+        <div class="container col-12 d-flex justify-content-center col-sm-8">
+            <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
+            Descubre tu discoteca <br/>
+            <span style="color: hsl(218, 81%, 75%)">Salimos <strong>Tonight ?</strong></span>
+            <o/h1>
+        </div>
+       <div class="d-flex justify-content-center align-items-center ">
+            <div id="map" class=""></div>
+       </div> 
+    </div>`,
+  //* Mapa
+  script: async () => {
+    const map = L.map("map").setView([51.505, -0.09], 13);
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19
+    }).addTo(map);
+    L.popup().setLatLng([41.458102, 2.263098]).setContent("Titus Carpa.").addTo(map);
+    L.popup().setLatLng([41.5327479, 2.4292751]).setContent("Cocoa Mataro.").addTo(map);
+    L.popup().setLatLng([41.53600261, 2.10959848]).setContent("Waka Sabadell.").addTo(map);
+  }
+};
 const proximosEventos = {
   template: `
-    <div class="col-12 background-radial-gradient overflow-hidden">
+    <div class="col-12 background-radial-gradient d-flex justify-content-center align-items-center overflow-hidden vh-100">
       <style>
           
           
@@ -3209,62 +3317,66 @@ const proximosEventos = {
           backdrop-filter: saturate(200%) blur(25px);
       }
       </style>
-          <div class="container col-12 d-flex justify-content-center">
-              <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
-              Tablon de eventos <br/>
-              <span style="color: hsl(218, 81%, 75%)">Salimos <strong>Tonight ?</strong></span>
-              <o/h1>
-          </div>
-          <div class="container">
-          <div class="row row-striped">
-              <div class="col-2 text-right">
-                  <h1 class="display-4"><span class="badge badge-secondary">16</span></h1>
-                  <h2>MARZO</h2>
-              </div>
-              <div class="col-10">
-                  <h3 class="text-uppercase"><strong>Mandanga de RazzMatazz</strong></h3>
-                  <ul class="list-inline">
-                      <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i>Jueves</li>
-                      <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i>00:00 - 06:00</li>
-                      <li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i>Calle Pamplona 28</li>
-                  </ul>
-                  <p>Si al leer “Yo quiero bailar toda la noche” se te va el pie, no le des más vueltas: la “Mandanga de Razzmatazz” es tu fiesta. Una refrescante fiesta donde bailarás hits por un tubo y donde te será imposible estarte quieto. “Bailoteo & Cachondeo” en modo non stop!!! No te lo pienses dos veces, ponte calzado cómodo y ven a bailar con nosotros..</p>
-              </div>
-          </div>
-          <div class="row row-striped">
-              <div class="col-2 text-right">
-                  <h1 class="display-4"><span class="badge badge-secondary">Waka Bull Night</span></h1>
-                  <h2>Marzo</h2>
-              </div>
-              <div class="col-10">
-                  <h3 class="text-uppercase"><strong>Waka Sabadell</strong></h3>
-                  <ul class="list-inline">
-                      <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i>Viernes</li>
-                      <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i>00</li>
-                      <li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> Room 4019</li>
-                  </ul>
-                  <p>Lorem ipsum dolsit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              </div>
-          </div>
-      </div>
+        
+          <div class="container col-12 justify-content-center align-items-center">
+            <div class="row row-striped">
+                <div class="col-2 text-right">
+                    <h1 class="display-4"><span class="badge badge-secondary">16</span></h1>
+                    <h2>MARZO</h2>
+                </div>
+                <div class="col-10">
+                    <h3 class="text-uppercase"><strong>Mandanga de RazzMatazz</strong></h3>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i>Jueves</li>
+                        <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i>00:00 - 06:00</li>
+                        <li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i>Calle Pamplona 28</li>
+                    </ul>
+                    <p>Si al leer “Yo quiero bailar toda la noche” se te va el pie, no le des más vueltas: la “Mandanga de Razzmatazz” es tu fiesta. Una refrescante fiesta donde bailarás hits por un tubo y donde te será imposible estarte quieto. “Bailoteo & Cachondeo” en modo non stop!!! No te lo pienses dos veces, ponte calzado cómodo y ven a bailar con nosotros..</p>
+                </div>
+            </div>
+            <div class="row row-striped">
+                <div class="col-2 text-right">
+                    <h1 class="display-4 "><span class="badge badge-secondary color-negro">16</span></h1>
+                    <h2>MARZO</h2>
+                </div>
+                <div class="col-10">
+                    <h3 class="text-uppercase"><strong>Mandanga de RazzMatazz</strong></h3>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i>Jueves</li>
+                        <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i>00:00 - 06:00</li>
+                        <li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i>Calle Pamplona 28</li>
+                    </ul>
+                    <p>Si al leer “Yo quiero bailar toda la noche” se te va el pie, no le des más vueltas: la “Mandanga de Razzmatazz” es tu fiesta. Una refrescante fiesta donde bailarás hits por un tubo y donde te será imposible estarte quieto. “Bailoteo & Cachondeo” en modo non stop!!! No te lo pienses dos veces, ponte calzado cómodo y ven a bailar con nosotros..</p>
+                </div>
+            </div>
+        </div>
+    </div>
       `,
   script: () => {
+  }
+};
+const user = {
+  template: `
+       <h1>Usuario</h1> 
+    `,
+  script: () => {
+    console.log("hola mundo");
   }
 };
 const footer = {
   template: `
     <nav class="navbar navbar-light bg-light d-flex justify-content-center align-items-center">
         <div class="mt-1 ">
-            <i class="fa-solid fa-magnifying-glass logos"></i>
+            <i class="fa-solid fa-magnifying-glass logos" id="descubrir"></i>
         </div>
         <div class="mt-1 ps-5 logos">
-            <i class="fa-regular fa-user"></i>
+            <i class="fa-regular fa-user" id="user"></i>
         </div>
         <div class="mt-1 ps-5">
-            <i class="fa-solid fa-ticket logos"></i>
+            <i class="fa-solid fa-ticket logos" id="cupones"></i>
         </div>
         <div class="mt-1 ps-5">
-            <i class="fa-solid fa-arrow-right logos"></i>
+            <i class="fa-solid fa-arrow-right logos" ></i>
         </div>
         <div class="mt-1 ps-5">
             <i class="fa-solid fa-calendar-days logos" id="proximosEventos"></i>
@@ -3274,6 +3386,18 @@ const footer = {
   script: () => {
     document.querySelector("#proximosEventos").addEventListener("click", () => {
       document.querySelector("main").innerHTML = proximosEventos.template;
+    });
+    document.querySelector("#descubrir").addEventListener("click", () => {
+      document.querySelector("main").innerHTML = descubrir.template;
+      descubrir.script();
+    });
+    document.querySelector("#user").addEventListener("click", () => {
+      document.querySelector("main").innerHTML = user.template;
+      user.script();
+    });
+    document.querySelector("#cupones").addEventListener("click", () => {
+      document.querySelector("main").innerHTML = cupones.template;
+      cupones.script();
     });
   }
 };
