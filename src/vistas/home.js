@@ -2,6 +2,7 @@ import { login } from './login'
 import Swal from 'sweetalert2/dist/sweetalert2.js'
 
 import 'sweetalert2/src/sweetalert2.scss'
+import { interfaz } from './interfaz'
 export const home = {
   template: `<div class="col-12 background-radial-gradient overflow-hidden">
     <style>
@@ -89,16 +90,12 @@ export const home = {
                   </div>
     
                   <!-- Submit button -->
-                  <div class="justify-content-center d-flex">
-                    <button type="submit" class="btn btn-primary btn-block mb-4 justify-content-center" id="registro">
-                      Registrate
-                    </button>
-                  </div>
+                 
     
                   <!-- Register buttons -->
                   <div class="text-center">
-                   <button id="buton1" class="transparent-bottons"><a><p class="text" id="">Ya tengo cuenta, iniciar sesion</p></a></button> 
-
+                   
+                  <button id="buton1" class="btn btn-primary">Registrarme</button> 
                   </div>
                 </form>
               </div>
@@ -110,8 +107,8 @@ export const home = {
 `,
   script: () => {
     document.querySelector('#buton1').addEventListener('click', (event) => {
-      document.querySelector('main').innerHTML = login.template
-      login.script()
+      document.querySelector('main').innerHTML = interfaz.template
+      interfaz.script()
     })
     document.querySelector('#registro').addEventListener('click', (event) => {
       event.preventDefault()

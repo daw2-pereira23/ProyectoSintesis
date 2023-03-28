@@ -16,8 +16,11 @@
     "vite": "^4.1.0"
   },
   "dependencies": {
+    "@googlemaps/js-api-loader": "^1.15.1",
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.3",
+    "leaflet": "^1.9.3",
+    "maplibre-gl": "^2.4.0",
     "sweetalert2": "^11.7.3"
   },
   "eslintConfig": {
