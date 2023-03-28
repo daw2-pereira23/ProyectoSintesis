@@ -40,170 +40,6 @@
   }
 })();
 const styles = "";
-const interfaz = {
-  template: `
-    <div class="col-12 background-radial-gradient overflow-hidden">
-    <style>
-        
-        
-    #radius-shape-1 {
-      height: 220px;
-      width: 220px;
-      top: -60px;
-      left: -130px;
-      background: radial-gradient(#44006b, #ad1fff);
-      overflow: hidden;
-    }
-
-    #radius-shape-2 {
-      border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
-      bottom: -60px;
-      right: -110px;
-      width: 300px;
-      height: 300px;
-      background: radial-gradient(#44006b, #ad1fff);
-      overflow: hidden;
-    }
-
-    .bg-glass {
-      background-color: hsla(0, 0%, 100%, 0.9) !important;
-      backdrop-filter: saturate(200%) blur(25px);
-    }
-    </style>
-          <div class="container py-5 px-md-5 text-center text-lg-start my-5">
-            <div class="container col-12 d-flex justify-content-center">
-              <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
-              Tu App para salir de fiesta <br />
-              <span style="color: hsl(218, 81%, 75%)">Salimos <strong>Tonight ?</strong></span>
-              <o/h1>
-            </div>
-          </div>
-        <div class="d-flex justify-content-center align-items-center ">
-          <div class="row">
-            <div class="card sm-p-2">
-              <img src="../imagenes/RazzMataz.jpg" alt="" class="card-img-top img-fluid pt-1">
-              <div class="card-body">
-                <h5 class="card-title">RazzMatazz</h5>
-                <p class="card-title">Aqui ira información sobre la discoteca</p>
-                <a href="https://www.salarazzmatazz.com" target="_blank">Más información</a>
-              </div>
-            </div>
-          </div>
-        </div>
-    
-    </div>
-    `,
-  script: () => {
-    document.querySelector("#masinformacion").addEventListener("click", () => {
-      const boton = document.querySelector("#masinformacion");
-      const p = document.createElement("p");
-      const enlace = `
-        <a href="https://www.salarazzmatazz.com" class="btn btn-primary white-color" id="masinformacion">Mas Informacion</a>
-      `;
-      p.innerHTML = enlace;
-      boton.innerHTML = enlace;
-    });
-  }
-};
-const login = {
-  template: `
-  <div class="col-12 background-radial-gradient overflow-hidden">
-  <style>
-      
-      }
-  
-      #radius-shape-1 {
-        height: 220px;
-        width: 220px;
-        top: -60px;
-        left: -130px;
-        background: radial-gradient(#44006b, #ad1fff);
-        overflow: hidden;
-      }
-  
-      #radius-shape-2 {
-        border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
-        bottom: -60px;
-        right: -110px;
-        width: 300px;
-        height: 300px;
-        background: radial-gradient(#44006b, #ad1fff);
-        overflow: hidden;
-      }
-  
-      .bg-glass {
-        background-color: hsla(0, 0%, 100%, 0.9) !important;
-        backdrop-filter: saturate(200%) blur(25px);
-      }
-    </style>
-  
-    <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
-      <div class="row gx-lg-5 align-items-center mb-5">
-        <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
-          <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
-            Tu App para salir de fiesta <br />
-            <span style="color: hsl(218, 81%, 75%)">Salimos <strong>Tonight ?</strong></span>
-          </h1>
-          <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
-            
-          </p>
-        </div>
-  
-        <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
-          <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
-          <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
-  
-          <div class="card bg-glass">
-            <div class="card-body px-4 py-5 px-md-5">
-              <form>
-                <!-- 2 column grid layout with text inputs for the first and last names -->
-                <div class="row">
-                  <h1>INICIO DE SESION </h1>
-                </div>
-  
-                <!-- Email input -->
-                <div class="form-outline mb-4">
-                  <input type="email" id="form3Example3" class="form-control" />
-                  <label class="form-label" for="form3Example3">Correo Electronico</label>
-                </div>
-  
-                <!-- Password input -->
-                <div class="form-outline mb-4">
-                  <input type="password" id="form3Example4" class="form-control" />
-                  <label class="form-label" for="form3Example4">Contraseña</label>
-                </div>
-  
-                <!-- Checkbox -->
-                <div class="form-check d-flex justify-content-center mb-4">
-                  <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
-                  <label class="form-check-label" for="form2Example33">
-                    No recuerdo mi contraseña
-                  </label>
-                </div>
-  
-                <!-- Submit button -->
-               <br>
-               <br>
-               <br>
-                <!-- Register buttons -->
-                <div class="text-center">
-                 <button id="butonLogin" class="transparent-bottons"><a><p class="text" id="botonLogin">Ya tengo cuenta, iniciar sesion</p></a></button> 
-
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-</div>
-    `,
-  script: () => {
-    document.querySelector("#botonLogin").addEventListener("click", () => {
-      document.querySelector("main").innerHTML = interfaz.template;
-    });
-  }
-};
 var commonjsGlobal = typeof globalThis !== "undefined" ? globalThis : typeof window !== "undefined" ? window : typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : {};
 var sweetalert2Exports = {};
 var sweetalert2$1 = {
@@ -2814,142 +2650,6 @@ var sweetalert2$1 = {
 })(sweetalert2$1);
 const Swal = sweetalert2Exports;
 const sweetalert2 = "";
-const home = {
-  template: `<div class="col-12 background-radial-gradient overflow-hidden">
-    <style>
-        
-        }
-    
-        #radius-shape-1 {
-          height: 220px;
-          width: 220px;
-          top: -60px;
-          left: -130px;
-          background: radial-gradient(#44006b, #ad1fff);
-          overflow: hidden;
-        }
-    
-        #radius-shape-2 {
-          border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
-          bottom: -60px;
-          right: -110px;
-          width: 300px;
-          height: 300px;
-          background: radial-gradient(#44006b, #ad1fff);
-          overflow: hidden;
-        }
-    
-        .bg-glass {
-          background-color: hsla(0, 0%, 100%, 0.9) !important;
-          backdrop-filter: saturate(200%) blur(25px);
-        }
-      </style>
-    
-      <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
-        <div class="row gx-lg-5 align-items-center mb-5">
-          <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
-            <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
-              Tu App para salir de fiesta <br />
-              <span style="color: hsl(218, 81%, 75%)">Salimos <strong>Tonight ?</strong></span>
-            </h1>
-            <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
-              
-            </p>
-          </div>
-    
-          <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
-            <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
-            <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
-    
-            <div class="card bg-glass">
-              <div class="card-body px-4 py-5 px-md-5">
-                <form>
-                  <!-- 2 column grid layout with text inputs for the first and last names -->
-                  <div class="row">
-                    <div class="col-md-6 mb-4">
-                      <div class="form-outline">
-                        <input type="text" id="form3Example1" class="form-control" />
-                        <label class="form-label" for="form3Example1">Nombre</label>
-                      </div>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                      <div class="form-outline">
-                        <input type="text" id="form3Example2" class="form-control" />
-                        <label class="form-label" for="form3Example2">Apellidos</label>
-                      </div>
-                    </div>
-                  </div>
-    
-                  <!-- Email input -->
-                  <div class="form-outline mb-4">
-                    <input type="email" id="form3Example3" class="form-control" />
-                    <label class="form-label" for="form3Example3">Correo Electronico</label>
-                  </div>
-    
-                  <!-- Password input -->
-                  <div class="form-outline mb-4">
-                    <input type="password" id="form3Example4" class="form-control" />
-                    <label class="form-label" for="form3Example4">Contraseña</label>
-                  </div>
-    
-                  <!-- Checkbox -->
-                  <div class="form-check d-flex justify-content-center mb-4">
-                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
-                    <label class="form-check-label" for="form2Example33">
-                      No recuerdo mi contraseña
-                    </label>
-                  </div>
-    
-                  <!-- Submit button -->
-                  <div class="justify-content-center d-flex">
-                    <button type="submit" class="btn btn-primary btn-block mb-4 justify-content-center" id="registro">
-                      Registrate
-                    </button>
-                  </div>
-    
-                  <!-- Register buttons -->
-                  <div class="text-center">
-                   <button id="buton1" class="transparent-bottons"><a><p class="text" id="">Ya tengo cuenta, iniciar sesion</p></a></button> 
-
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-</div>
-`,
-  script: () => {
-    document.querySelector("#buton1").addEventListener("click", (event) => {
-      document.querySelector("main").innerHTML = login.template;
-      login.script();
-    });
-    document.querySelector("#registro").addEventListener("click", (event) => {
-      event.preventDefault();
-      console.log("Hola mundo");
-      Swal.fire({
-        title: "Seguro que quieres registrarte con el usuario + ",
-        text: "Podras cambiarlo más adelante",
-        icon: "warning",
-        showCancelButton: true,
-        confirmButtonColor: "#008000",
-        cancelButtonColor: "#d33",
-        confirmButtonText: "Si crealo!"
-      }).then((result) => {
-        if (result.isConfirmed) {
-          Swal.fire(
-            "Nombre usuario a sido creado correctamente"
-          );
-        }
-      });
-    });
-    document.querySelector("#buton1").addEventListener("click", () => {
-      document.querySelector("main").innerHTML = login.template;
-      login.script();
-    });
-  }
-};
 const editarPerfil = {
   template: `
    <div class="card">
@@ -3118,6 +2818,305 @@ const admin = {
     });
   }
 };
+const login = {
+  template: `
+  <div class="col-12 background-radial-gradient overflow-hidden">
+  <style>
+      
+      }
+  
+      #radius-shape-1 {
+        height: 220px;
+        width: 220px;
+        top: -60px;
+        left: -130px;
+        background: radial-gradient(#44006b, #ad1fff);
+        overflow: hidden;
+      }
+  
+      #radius-shape-2 {
+        border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+        bottom: -60px;
+        right: -110px;
+        width: 300px;
+        height: 300px;
+        background: radial-gradient(#44006b, #ad1fff);
+        overflow: hidden;
+      }
+  
+      .bg-glass {
+        background-color: hsla(0, 0%, 100%, 0.9) !important;
+        backdrop-filter: saturate(200%) blur(25px);
+      }
+    </style>
+  
+    <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
+      <div class="row gx-lg-5 align-items-center mb-5">
+        <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+          <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
+            Tu App para salir de fiesta <br />
+            <span style="color: hsl(218, 81%, 75%)">Salimos <strong>Tonight ?</strong></span>
+          </h1>
+          <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
+            
+          </p>
+        </div>
+  
+        <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+          <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+          <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+  
+          <div class="card bg-glass">
+            <div class="card-body px-4 py-5 px-md-5">
+              <form>
+                <!-- 2 column grid layout with text inputs for the first and last names -->
+                <div class="row">
+                  <h1>INICIO DE SESION </h1>
+                </div>
+  
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <input type="email" id="form3Example3" class="form-control" />
+                  <label class="form-label" for="form3Example3">Correo Electronico</label>
+                </div>
+  
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                  <input type="password" id="form3Example4" class="form-control" />
+                  <label class="form-label" for="form3Example4">Contraseña</label>
+                </div>
+  
+                <!-- Checkbox -->
+                <div class="form-check d-flex justify-content-center mb-4">
+                  <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
+                  <label class="form-check-label" for="form2Example33">
+                    No recuerdo mi contraseña
+                  </label>
+                </div>
+  
+                <!-- Submit button -->
+               <br>
+                <!-- Register buttons -->
+                <div class="text-center">
+                 <button id="butonLogin" class="btn btn-success">Crear Nueva Cuenta</button> 
+
+                </div>
+              </form>
+              <br>
+              <br>
+              <br>
+            </div>         
+          </div>
+        </div>
+      </div>
+    </div>
+    
+</div>
+    `,
+  script: () => {
+    document.querySelector("#butonLogin").addEventListener("click", () => {
+      document.querySelector("main").innerHTML = home.template;
+      home.script();
+    });
+  }
+};
+const interfaz = {
+  template: `
+    <div class="col-12 background-radial-gradient overflow-hidden">
+    <style>
+        
+        
+    #radius-shape-1 {
+      height: 220px;
+      width: 220px;
+      top: -60px;
+      left: -130px;
+      background: radial-gradient(#44006b, #ad1fff);
+      overflow: hidden;
+    }
+
+    #radius-shape-2 {
+      border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+      bottom: -60px;
+      right: -110px;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(#44006b, #ad1fff);
+      overflow: hidden;
+    }
+
+    .bg-glass {
+      background-color: hsla(0, 0%, 100%, 0.9) !important;
+      backdrop-filter: saturate(200%) blur(25px);
+    }
+    </style>
+          <div class="container py-5 px-md-5 text-center text-lg-start my-5">
+            <div class="container col-12 d-flex justify-content-center">
+              <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
+              Tu App para salir de fiesta <br />
+              <span style="color: hsl(218, 81%, 75%)">Salimos <strong>Tonight ?</strong></span>
+              <o/h1>
+            </div>
+          </div>
+        <div class="d-flex justify-content-center align-items-center ">
+          <div class="row">
+            <div class="card sm-p-2">
+              <img src="../imagenes/RazzMataz.jpg" alt="" class="card-img-top img-fluid pt-1">
+              <div class="card-body">
+                <h5 class="card-title">RazzMatazz</h5>
+                <p class="card-title">Aqui ira información sobre la discoteca</p>
+                <a href="https://www.salarazzmatazz.com" target="_blank">Más información</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+    </div>
+    `,
+  script: () => {
+    document.querySelector("#masinformacion").addEventListener("click", () => {
+      const boton = document.querySelector("#masinformacion");
+      const p = document.createElement("p");
+      const enlace = `
+        <a href="https://www.salarazzmatazz.com" class="btn btn-primary white-color" id="masinformacion">Mas Informacion</a>
+      `;
+      p.innerHTML = enlace;
+      boton.innerHTML = enlace;
+    });
+  }
+};
+const home = {
+  template: `<div class="col-12 background-radial-gradient overflow-hidden">
+    <style>
+        
+        }
+    
+        #radius-shape-1 {
+          height: 220px;
+          width: 220px;
+          top: -60px;
+          left: -130px;
+          background: radial-gradient(#44006b, #ad1fff);
+          overflow: hidden;
+        }
+    
+        #radius-shape-2 {
+          border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+          bottom: -60px;
+          right: -110px;
+          width: 300px;
+          height: 300px;
+          background: radial-gradient(#44006b, #ad1fff);
+          overflow: hidden;
+        }
+    
+        .bg-glass {
+          background-color: hsla(0, 0%, 100%, 0.9) !important;
+          backdrop-filter: saturate(200%) blur(25px);
+        }
+      </style>
+    
+      <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
+        <div class="row gx-lg-5 align-items-center mb-5">
+          <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+            <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
+              Tu App para salir de fiesta <br />
+              <span style="color: hsl(218, 81%, 75%)">Salimos <strong>Tonight ?</strong></span>
+            </h1>
+            <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
+              
+            </p>
+          </div>
+    
+          <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+            <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+            <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+    
+            <div class="card bg-glass">
+              <div class="card-body px-4 py-5 px-md-5">
+                <form>
+                  <!-- 2 column grid layout with text inputs for the first and last names -->
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <input type="text" id="form3Example1" class="form-control" />
+                        <label class="form-label" for="form3Example1">Nombre</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <input type="text" id="form3Example2" class="form-control" />
+                        <label class="form-label" for="form3Example2">Apellidos</label>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!-- Email input -->
+                  <div class="form-outline mb-4">
+                    <input type="email" id="form3Example3" class="form-control" />
+                    <label class="form-label" for="form3Example3">Correo Electronico</label>
+                  </div>
+    
+                  <!-- Password input -->
+                  <div class="form-outline mb-4">
+                    <input type="password" id="form3Example4" class="form-control" />
+                    <label class="form-label" for="form3Example4">Contraseña</label>
+                  </div>
+    
+                  <!-- Checkbox -->
+                  <div class="form-check d-flex justify-content-center mb-4">
+                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
+                    <label class="form-check-label" for="form2Example33">
+                      No recuerdo mi contraseña
+                    </label>
+                  </div>
+    
+                  <!-- Submit button -->
+                 
+    
+                  <!-- Register buttons -->
+                  <div class="text-center">
+                   
+                  <button id="buton1" class="btn btn-primary">Registrarme</button> 
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+`,
+  script: () => {
+    document.querySelector("#buton1").addEventListener("click", (event) => {
+      document.querySelector("main").innerHTML = interfaz.template;
+      interfaz.script();
+    });
+    document.querySelector("#registro").addEventListener("click", (event) => {
+      event.preventDefault();
+      console.log("Hola mundo");
+      Swal.fire({
+        title: "Seguro que quieres registrarte con el usuario + ",
+        text: "Podras cambiarlo más adelante",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#008000",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Si crealo!"
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire(
+            "Nombre usuario a sido creado correctamente"
+          );
+        }
+      });
+    });
+    document.querySelector("#buton1").addEventListener("click", () => {
+      document.querySelector("main").innerHTML = login.template;
+      login.script();
+    });
+  }
+};
 const header = {
   template: `
     <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
@@ -3195,40 +3194,20 @@ const cupones = {
       backdrop-filter: saturate(200%) blur(25px);
   }
   </style>
-  <div class="container col-12 d-flex justify-content-center col-sm-8">
+    <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
       <h1 class="my-5 display-5 fw-bold ls-tight text-center" style="color: hsl(218, 81%, 95%)">
       CUPONES <br/>
       <span style="color: hsl(218, 81%, 75%)">Salimos <strong>Tonight ?</strong></span>
       <o/h1>
-  </div>
-  <div class="col-12 justify-content-center d-flex ps-5 pe-5">
-    <div class="col-6 border d-flex flex-column justify-content-center align-items-center">
-        <div class="card" style="width: 30rem;">
-          <img class="card-img-top" src="../imagenes/publicidadWaka.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Titulo Descuento</h5>
-            <p class="card-text">Descripcion Descuento</p>
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated text-start" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75 %</div>
-            </div>
-          </div>
+      <div class="d-flex flex-column text-center justify-content-center">
+        <div class="col-xs-12 col-6 text-center">
+          1
         </div>
-    </div>
-    <div class="col-6 border d-flex flex-column justify-content-center align-items-center ">
-      <div class="card" style="width: 30rem;">
-        <img class="card-img-top" src="../imagenes/cocoa.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Titulo Descuento</h5>
-          <p class="card-text">Descripcion Descuento</p>
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated text-start" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75 %</div>
-          </div>
+        <div class="col-6">
+          2
         </div>
       </div>
     </div>
-  </div>
-    
-
   </div>
     `,
   script: () => {
@@ -3318,11 +3297,11 @@ const proximosEventos = {
       }
       </style>
         
-          <div class="container col-12 justify-content-center align-items-center">
+        <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
             <div class="row row-striped">
                 <div class="col-2 text-right">
                     <h1 class="display-4"><span class="badge badge-secondary">16</span></h1>
-                    <h2>MARZO</h2>
+                    <h2>MAR</h2>
                 </div>
                 <div class="col-10">
                     <h3 class="text-uppercase"><strong>Mandanga de RazzMatazz</strong></h3>
@@ -3337,7 +3316,7 @@ const proximosEventos = {
             <div class="row row-striped">
                 <div class="col-2 text-right">
                     <h1 class="display-4 "><span class="badge badge-secondary color-negro">16</span></h1>
-                    <h2>MARZO</h2>
+                    <h2>MAR</h2>
                 </div>
                 <div class="col-10">
                     <h3 class="text-uppercase"><strong>Mandanga de RazzMatazz</strong></h3>
@@ -3348,7 +3327,7 @@ const proximosEventos = {
                     </ul>
                     <p>Si al leer “Yo quiero bailar toda la noche” se te va el pie, no le des más vueltas: la “Mandanga de Razzmatazz” es tu fiesta. Una refrescante fiesta donde bailarás hits por un tubo y donde te será imposible estarte quieto. “Bailoteo & Cachondeo” en modo non stop!!! No te lo pienses dos veces, ponte calzado cómodo y ven a bailar con nosotros..</p>
                 </div>
-            </div>
+            </div>    
         </div>
     </div>
       `,
@@ -3402,8 +3381,8 @@ const footer = {
   }
 };
 document.querySelector("header").innerHTML = header.template;
-document.querySelector("main").innerHTML = home.template;
-home.script();
-header.script();
+document.querySelector("main").innerHTML = login.template;
 document.querySelector("footer").innerHTML = footer.template;
+login.script();
+header.script();
 footer.script();
